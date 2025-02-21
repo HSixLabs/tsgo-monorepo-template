@@ -1,0 +1,8 @@
+# Backend ownership
+/apps/backend/ @teamname
+
+# Frontend ownership
+/apps/frontend/ @teamname
+
+# Infrastructure ownership
+/infrastructure/ @teamname

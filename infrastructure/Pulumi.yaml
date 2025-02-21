@@ -1,0 +1,7 @@
+name: rename-this
+description: Give a description of the infrastructure
+runtime: go
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-go

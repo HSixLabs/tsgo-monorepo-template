@@ -1,0 +1,89 @@
+# Global Ignore
+.DS_Store
+Thumbs.db
+
+# TypeScript (Frontend)
+apps/frontend/node_modules/
+apps/frontend/.turbo/
+apps/frontend/.eslintcache
+apps/frontend/.parcel-cache
+apps/frontend/.next/
+apps/frontend/.nuxt/
+apps/frontend/dist/
+apps/frontend/build/
+apps/frontend/out/
+apps/frontend/yarn.lock
+apps/frontend/pnpm-lock.yaml
+apps/frontend/.npm/
+apps/frontend/.yarn/
+apps/frontend/.pnp.*
+apps/frontend/*.log
+apps/frontend/.env
+apps/frontend/.env.local
+apps/frontend/.env.development
+apps/frontend/.env.production
+
+# Go (Backend)
+apps/backend/bin/
+apps/backend/pkg/mod/
+apps/backend/pkg/cache/
+apps/backend/pkg/temp/
+apps/backend/.cache/
+apps/backend/.env
+apps/backend/.env.local
+apps/backend/go.sum
+apps/backend/go.work
+apps/backend/go.work.sum
+apps/backend/debug/
+apps/backend/testdata/
+apps/backend/coverage.out
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor & OS-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# GitHub Actions cache
+.github/workflows/*.log
+.github/workflows/.cache/
+
+# Docker
+docker-compose.override.yml
+apps/backend/docker/
+apps/frontend/docker/
+*.dockerfile
+
+# Miscellaneous
+coverage/
+*.pid
+*.seed
+*.seed.ts
+*.pid.lock
+
+# Build output
+apps/frontend/.vite/
+apps/frontend/.output/
+apps/backend/.output/
+apps/backend/.out/
+
+# Dependency directories
+node_modules/
+dist/
+out/
+
+# Pulumi
+infrastructure/.pulumi/
+infrastructure/bin/
+infrastructure/.cache/

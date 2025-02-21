@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/azz/pretty-quick
+    rev: v4.0.0
+    hooks:
+      - id: pretty-quick
+        args: ["--staged"]
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v9.20.1
+    hooks:
+      - id: eslint
+        files: \.tsx?$
+
+  - repo: https://github.com/dnephin/pre-commit-golang
+    rev: v0.5.1
+    hooks:
+      - id: gofmt
+      - id: govet
+
+  - repo: https://github.com/securego/gosec
+    rev: v2.22.1
+    hooks:
+      - id: gosec
